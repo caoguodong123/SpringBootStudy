@@ -1,0 +1,73 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>matchId</name>
+        <position>0</position>
+        <type>Integer</type>
+        <value>期货匹配编号</value>
+    </Attribute>
+    <Attribute>
+        <name>num</name>
+        <position>1</position>
+        <type>String</type>
+        <value>成交编号</value>
+    </Attribute>
+    <Attribute>
+        <name>contractId</name>
+        <position>2</position>
+        <type>String</type>
+        <value>合约</value>
+    </Attribute>
+
+    <Attribute>
+        <name>longShort</name>
+        <position>3</position>
+        <type>String</type>
+        <value>买/卖</value>
+    </Attribute>
+    <Attribute>
+        <name>openClose</name>
+        <position>4</position>
+        <type>String</type>
+        <value>开/平</value>
+    </Attribute>
+
+    <Attribute>
+        <name>price</name>
+        <position>5</position>
+        <type>Double</type>
+        <value>成交价格</value>
+    </Attribute>
+    <Attribute>
+        <name>amount</name>
+        <position>6</position>
+        <type>Double</type>
+        <value>成交手数</value>
+    </Attribute>
+
+    <Attribute>
+        <name>matchedQuantity</name>
+        <position>7</position>
+        <type>Double</type>
+        <value>匹配数量</value>
+    </Attribute>
+    <Attribute>
+        <name>planTimeId</name>
+        <position>8</position>
+        <type>String</type>
+        <value>计划编号</value>
+    </Attribute>
+
+    <Attribute>
+        <name>createTime</name>
+        <position>9</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+    <!--    <Attribute>-->
+    <!--        <name>leftQuantity</name>-->
+    <!--        <position>10</position>-->
+    <!--        <type>Double</type>-->
+    <!--        <value>最后修改人</value>-->
+    <!--    </Attribute>-->
+</Model>

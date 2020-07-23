@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>planTimeId</name>
+        <position>0</position>
+        <type>String</type>
+        <value>计划编号</value>
+    </Attribute>
+    <Attribute>
+        <name>planName</name>
+        <position>1</position>
+        <type>String</type>
+        <value>计划名称</value>
+    </Attribute>
+
+    <Attribute>
+        <name>startTime</name>
+        <position>2</position>
+        <type>Date</type>
+        <value>开始时间</value>
+    </Attribute>
+    <Attribute>
+        <name>endTime</name>
+        <position>3</position>
+        <type>Date</type>
+        <value>结束时间</value>
+    </Attribute>
+
+    <Attribute>
+        <name>speculationHedging</name>
+        <position>4</position>
+        <type>String</type>
+        <value>投机/套期保值</value>
+    </Attribute>
+
+
+    <Attribute>
+        <name>actualTotalProfit</name>
+        <position>5</position>
+        <type>Double</type>
+        <value>实际总利润</value>
+    </Attribute>
+
+    <Attribute>
+        <name>createTime</name>
+        <position>6</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+</Model>

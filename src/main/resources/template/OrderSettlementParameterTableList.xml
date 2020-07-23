@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>ticker</name>
+        <position>0</position>
+        <type>String</type>
+        <value>合约</value>
+    </Attribute>
+    <Attribute>
+        <name>commodityType</name>
+        <position>1</position>
+        <type>String</type>
+        <value>商品种类</value>
+    </Attribute>
+    <Attribute>
+        <name>bHedgingMarginRate</name>
+        <position>2</position>
+        <type>Double</type>
+        <value>买套保交易保证金率</value>
+    </Attribute>
+    <Attribute>
+        <name>sHedgingMarginRate</name>
+        <position>3</position>
+        <type>Double</type>
+        <value>卖套保交易保证金率</value>
+    </Attribute>
+    <Attribute>
+        <name>longMarginRate</name>
+        <position>4</position>
+        <type>Double</type>
+        <value>买投机交易保证金率</value>
+    </Attribute>
+    <Attribute>
+        <name>shortMarginRate</name>
+        <position>5</position>
+        <type>Double</type>
+        <value>卖投机交易保证金率</value>
+    </Attribute>
+    <Attribute>
+        <name>tradingFeeRate</name>
+        <position>6</position>
+        <type>Double</type>
+        <value>交易手续费率</value>
+    </Attribute>
+    <Attribute>
+        <name>tradingFee</name>
+        <position>7</position>
+        <type>Double</type>
+        <value>交易手续费</value>
+    </Attribute>
+
+    <Attribute>
+        <name>deliveryFee</name>
+        <position>8</position>
+        <type>Double</type>
+        <value>交割手续费</value>
+    </Attribute>
+
+
+    <Attribute>
+        <name>offsetTodayFee</name>
+        <position>9</position>
+        <type>Double</type>
+        <value>平今仓手续率</value>
+    </Attribute>
+
+    <Attribute>
+        <name>createTime</name>
+        <position>10</position>
+        <type>Date</type>
+        <value>创建日期</value>
+    </Attribute>
+
+</Model>

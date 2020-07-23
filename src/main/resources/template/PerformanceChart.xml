@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>performance</name>
+        <position>0</position>
+        <type>String</type>
+        <value>分组方式</value>
+    </Attribute>
+    <Attribute>
+        <name>futureProfit</name>
+        <position>1</position>
+        <type>Double</type>
+        <value>期货利润</value>
+    </Attribute>
+    <Attribute>
+        <name>spotProfit</name>
+        <position>2</position>
+        <type>Double</type>
+        <value>现货利润</value>
+    </Attribute>
+
+    <Attribute>
+        <name>totalProfit</name>
+        <position>3</position>
+        <type>Double</type>
+        <value>总利润</value>
+    </Attribute>
+
+
+</Model>

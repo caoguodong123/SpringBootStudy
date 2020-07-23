@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>num</name>
+        <position>0</position>
+        <type>String</type>
+        <value>成交编号</value>
+    </Attribute>
+    <Attribute>
+        <name>contractId</name>
+        <position>1</position>
+        <type>String</type>
+        <value>合约</value>
+    </Attribute>
+    <Attribute>
+        <name>commodityType</name>
+        <position>2</position>
+        <type>String</type>
+        <value>商品种类</value>
+    </Attribute>
+<!--    <Attribute>-->
+<!--        <name>expirationDate</name>-->
+<!--        <position>3</position>-->
+<!--        <type>Date</type>-->
+<!--        <value>到期日</value>-->
+<!--    </Attribute>-->
+    <Attribute>
+        <name>commodityTypeDate</name>
+        <position>3</position>
+        <type>Date</type>
+        <value>到期日</value>
+    </Attribute>
+    <Attribute>
+        <name>longShort</name>
+        <position>4</position>
+        <type>String</type>
+        <value>买/卖</value>
+    </Attribute>
+    <Attribute>
+        <name>openClose</name>
+        <position>5</position>
+        <type>String</type>
+        <value>开/平</value>
+    </Attribute>
+
+    <Attribute>
+        <name>price</name>
+        <position>6</position>
+        <type>Double</type>
+        <value>成交价格</value>
+    </Attribute>
+    <Attribute>
+        <name>amount</name>
+        <position>7</position>
+        <type>Double</type>
+        <value>成交手数</value>
+    </Attribute>
+    <Attribute>
+        <name>quantity</name>
+        <position>8</position>
+        <type>Double</type>
+        <value>数量</value>
+    </Attribute>
+    <Attribute>
+        <name>value</name>
+        <position>9</position>
+        <type>Double</type>
+        <value>成交金额</value>
+    </Attribute>
+    <Attribute>
+        <name>time</name>
+        <position>10</position>
+        <type>Date</type>
+        <value>成交时间</value>
+    </Attribute>
+
+    <Attribute>
+        <name>speculationHedging1</name>
+        <position>11</position>
+        <type>String</type>
+        <value>投机/套保</value>
+    </Attribute>
+
+    <Attribute>
+        <name>trader</name>
+        <position>12</position>
+        <type>String</type>
+        <value>交易员</value>
+    </Attribute>
+
+    <Attribute>
+        <name>account</name>
+        <position>13</position>
+        <type>String</type>
+        <value>账户</value>
+    </Attribute>
+
+
+    <Attribute>
+        <name>createTime</name>
+        <position>14</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+
+</Model>

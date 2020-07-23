@@ -1,0 +1,88 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+       <name>contractId</name>
+       <position>0</position>
+       <type>String</type>
+       <value>合约</value>
+    </Attribute>
+    <Attribute>
+        <name>longPosition</name>
+        <position>1</position>
+        <type>Integer</type>
+        <value>多单持仓</value>
+    </Attribute>
+    <Attribute>
+        <name>longPositionPrice</name>
+        <position>2</position>
+        <type>Integer</type>
+        <value>持仓均价(多)</value>
+    </Attribute>
+    <Attribute>
+        <name>longAmount</name>
+        <position>3</position>
+        <type>Integer</type>
+        <value>多单增减</value>
+    </Attribute>
+
+    <Attribute>
+        <name>longPositionValue</name>
+        <position>4</position>
+        <type>Integer</type>
+        <value>多单持仓盈亏</value>
+    </Attribute>
+
+
+    <Attribute>
+        <name>shortPosition</name>
+        <position>5</position>
+        <type>Integer</type>
+        <value>空单持仓</value>
+    </Attribute>
+    <Attribute>
+        <name>shortPositionPrice</name>
+        <position>6</position>
+        <type>Integer</type>
+        <value>持仓均价(空)</value>
+    </Attribute>
+    <Attribute>
+        <name>shortAmount</name>
+        <position>7</position>
+        <type>Integer</type>
+        <value>空单增减</value>
+    </Attribute>
+    <Attribute>
+        <name>shortPositionValue</name>
+        <position>8</position>
+        <type>Integer</type>
+        <value>空单持仓盈亏</value>
+    </Attribute>
+
+    <Attribute>
+        <name>createTime</name>
+        <position>9</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+
+<!--    <Attribute>-->
+<!--        <name>department</name>-->
+<!--        <position>8</position>-->
+<!--        <type>String</type>-->
+<!--        <value>期货公司</value>-->
+<!--    </Attribute>-->
+<!--    <Attribute>-->
+<!--        <name>brokerageCompany</name>-->
+<!--        <position>9</position>-->
+<!--        <type>String</type>-->
+<!--        <value>我司</value>-->
+<!--    </Attribute>-->
+<!--    <Attribute>-->
+<!--        <name>branchOffice</name>-->
+<!--        <position>10</position>-->
+<!--        <type>String</type>-->
+<!--        <value>部门</value>-->
+<!--    </Attribute>-->
+  
+
+</Model>

@@ -1,0 +1,301 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>contractId</name>
+        <position>0</position>
+        <type>String</type>
+        <value>合同编号</value>
+    </Attribute>
+    <Attribute>
+        <name>contractDocumentCode</name>
+        <position>1</position>
+        <type>String</type>
+        <value>纸质合同编号</value>
+    </Attribute>
+
+    <Attribute>
+        <name>commodityType</name>
+        <position>2</position>
+        <type>String</type>
+        <value>商品种类</value>
+    </Attribute>
+    <Attribute>
+        <name>pricingMethod</name>
+        <position>3</position>
+        <type>String</type>
+        <value>定价方式</value>
+    </Attribute>
+
+    <Attribute>
+        <name>currencyType</name>
+        <position>4</position>
+        <type>String</type>
+        <value>币种</value>
+    </Attribute>
+    <Attribute>
+        <name>price</name>
+        <position>5</position>
+        <type>Double</type>
+        <value>含税价格（原币）</value>
+    </Attribute>
+    <Attribute>
+        <name>futureContract</name>
+        <position>6</position>
+        <type>String</type>
+        <value>期货合约</value>
+    </Attribute>
+    <Attribute>
+        <name>premium</name>
+        <position>7</position>
+        <type>Double</type>
+        <value>升贴水</value>
+    </Attribute>
+
+    <Attribute>
+        <name>unit</name>
+        <position>8</position>
+        <type>String</type>
+        <value>数量单位</value>
+    </Attribute>
+    <Attribute>
+        <name>quantity</name>
+        <position>9</position>
+        <type>Double</type>
+        <value>数量</value>
+    </Attribute>
+    <Attribute>
+        <name>leftQuantity</name>
+        <position>10</position>
+        <type>Double</type>
+        <value>剩余匹配数量</value>
+    </Attribute>
+    <Attribute>
+        <name>taxRate</name>
+        <position>11</position>
+        <type>Double</type>
+        <value>税率</value>
+    </Attribute>
+    <!--    <Attribute>-->
+    <!--        <name>originalAmountContainingTax</name>-->
+    <!--        <position>11</position>-->
+    <!--        <type>Double</type>-->
+    <!--        <value>含税金额（原币）</value>-->
+    <!--    </Attribute>-->
+    <Attribute>
+        <name>totalAmountContainingTax</name>
+        <position>12</position>
+        <type>Double</type>
+        <value>含税金额（原币）</value>
+    </Attribute>
+
+    <Attribute>
+        <name>exchangeMethod</name>
+        <position>13</position>
+        <type>String</type>
+        <value>汇率方式</value>
+    </Attribute>
+    <Attribute>
+        <name>exchangeRate</name>
+        <position>14</position>
+        <type>Double</type>
+        <value>汇率</value>
+    </Attribute>
+    <Attribute>
+        <name>originalAmountContainingTax</name>
+        <position>15</position>
+        <type>Double</type>
+        <value>含税金额（本币）</value>
+    </Attribute>
+
+
+    <Attribute>
+        <name>tradeType</name>
+        <position>16</position>
+        <type>String</type>
+        <value>贸易类型</value>
+    </Attribute>
+    <Attribute>
+        <name>contractType</name>
+        <position>17</position>
+        <type>String</type>
+        <value>合同类型</value>
+    </Attribute>
+    <Attribute>
+        <name>supplier</name>
+        <position>18</position>
+        <type>String</type>
+        <value>客户</value>
+    </Attribute>
+    <Attribute>
+        <name>title</name>
+        <position>19</position>
+        <type>String</type>
+        <value>合同抬头</value>
+    </Attribute>
+
+    <Attribute>
+        <name>organization</name>
+        <position>20</position>
+        <type>String</type>
+        <value>机构</value>
+    </Attribute>
+    <Attribute>
+        <name>sector</name>
+        <position>21</position>
+        <type>String</type>
+        <value>部门</value>
+    </Attribute>
+
+    <Attribute>
+        <name>businessStaff</name>
+        <position>22</position>
+        <type>String</type>
+        <value>业务员</value>
+    </Attribute>
+    <Attribute>
+        <name>documentMaker</name>
+        <position>23</position>
+        <type>String</type>
+        <value>制单员</value>
+    </Attribute>
+    <Attribute>
+        <name>signedDate</name>
+        <position>24</position>
+        <type>Date</type>
+        <value>签订日期</value>
+    </Attribute>
+    <Attribute>
+        <name>expirtyDate</name>
+        <position>25</position>
+        <type>Date</type>
+        <value>合约有效期</value>
+    </Attribute>
+    <Attribute>
+        <name>documentDate</name>
+        <position>26</position>
+        <type>Date</type>
+        <value>制单日期</value>
+    </Attribute>
+
+
+    <Attribute>
+        <name>isGrantingCredit</name>
+        <position>27</position>
+        <type>String</type>
+        <value>是否授信</value>
+    </Attribute>
+    <Attribute>
+        <name>creditAmount</name>
+        <position>28</position>
+        <type>Double</type>
+        <value>授信额度</value>
+    </Attribute>
+    <Attribute>
+        <name>granting</name>
+        <position>29</position>
+        <type>Date</type>
+        <value>授信期限</value>
+    </Attribute>
+    <Attribute>
+        <name>depositAmount</name>
+        <position>30</position>
+        <type>Double</type>
+        <value>保证金金额</value>
+    </Attribute>
+    <Attribute>
+        <name>depositUnit</name>
+        <position>31</position>
+        <type>String</type>
+        <value>保证金单位</value>
+    </Attribute>
+
+
+
+    <Attribute>
+        <name>brand</name>
+        <position>32</position>
+        <type>String</type>
+        <value>品牌</value>
+    </Attribute>
+    <Attribute>
+        <name>provenance</name>
+        <position>33</position>
+        <type>String</type>
+        <value>产地</value>
+    </Attribute>
+    <Attribute>
+        <name>size</name>
+        <position>34</position>
+        <type>String</type>
+        <value>规格</value>
+    </Attribute>
+    <Attribute>
+        <name>materialQuality</name>
+        <position>35</position>
+        <type>String</type>
+        <value>材质</value>
+    </Attribute>
+
+    <Attribute>
+        <name>mark</name>
+        <position>36</position>
+        <type>String</type>
+        <value>牌号</value>
+    </Attribute>
+
+
+
+    <Attribute>
+        <name>createTime</name>
+        <position>37</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+
+    <Attribute>
+        <name>deliveryDate</name>
+        <position>38</position>
+        <type>Date</type>
+        <value>交货时间</value>
+    </Attribute>
+    <Attribute>
+        <name>thisQuantity</name>
+        <position>39</position>
+        <type>Double</type>
+        <value>本次数量</value>
+    </Attribute>
+
+    <Attribute>
+        <name>deliveryMethod</name>
+        <position>40</position>
+        <type>String</type>
+        <value>交付方式</value>
+    </Attribute>
+    <Attribute>
+        <name>settlementMethod</name>
+        <position>41</position>
+        <type>String</type>
+        <value>结算方式</value>
+    </Attribute>
+    <Attribute>
+        <name>settleMarket</name>
+        <position>42</position>
+        <type>String</type>
+        <value>交货市场</value>
+    </Attribute>
+
+    <Attribute>
+        <name>shippingMethod</name>
+        <position>43</position>
+        <type>String</type>
+        <value>运输方式</value>
+    </Attribute>
+    <Attribute>
+        <name>expensePay</name>
+        <position>44</position>
+        <type>String</type>
+        <value>费用承担</value>
+    </Attribute>
+
+
+</Model>

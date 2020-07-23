@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>commodityType</name>
+        <position>0</position>
+        <type>String</type>
+        <value>品种</value>
+    </Attribute>
+    <Attribute>
+        <name>mark</name>
+        <position>1</position>
+        <type>String</type>
+        <value>牌号</value>
+    </Attribute>
+    <Attribute>
+        <name>storehouse</name>
+        <position>2</position>
+        <type>String</type>
+        <value>库房</value>
+    </Attribute>
+    <Attribute>
+        <name>marketPrice</name>
+        <position>3</position>
+        <type>Double</type>
+        <value>市场价格</value>
+    </Attribute>
+    <Attribute>
+        <name>marketDate</name>
+        <position>4</position>
+        <type>Date</type>
+        <value>日期</value>
+    </Attribute>
+    <Attribute>
+        <name>createTime</name>
+        <position>5</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+
+</Model>

@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes"?>
+<Model>
+    <Attribute>
+        <name>strategyId</name>
+        <position>0</position>
+        <type>String</type>
+        <value>策略ID</value>
+    </Attribute>
+    <Attribute>
+        <name>strategyName</name>
+        <position>1</position>
+        <type>String</type>
+        <value>策略名称</value>
+    </Attribute>
+    <Attribute>
+        <name>strategyType</name>
+        <position>2</position>
+        <type>String</type>
+        <value>策略类型</value>
+    </Attribute>
+    <Attribute>
+        <name>strategyFunction</name>
+        <position>3</position>
+        <type>String</type>
+        <value>策略公式</value>
+    </Attribute>
+
+    <Attribute>
+        <name>startTime</name>
+        <position>4</position>
+        <type>Date</type>
+        <value>开始时间</value>
+    </Attribute>
+    <Attribute>
+        <name>endTime</name>
+        <position>5</position>
+        <type>Date</type>
+        <value>结束时间</value>
+    </Attribute>
+    <Attribute>
+        <name>createTime</name>
+        <position>6</position>
+        <type>Date</type>
+        <value>创建时间</value>
+    </Attribute>
+</Model>
