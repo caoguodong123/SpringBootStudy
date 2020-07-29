@@ -8,8 +8,7 @@ import cn.afterturn.easypoi.excel.entity.TemplateExportParams;
 import cn.afterturn.easypoi.excel.entity.result.ExcelImportResult;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.*;
 import org.slf4j.Logger;
@@ -134,6 +133,67 @@ public class ExcelUtil<T> {
                 row.createCell(j).setCellValue(values[i][j]);
             }
         }
+        return wb;
+    }
+
+    public static XSSFWorkbook getXSSFWorkbookTest(String [][]values,int index, XSSFWorkbook wb){
+        // 第一步，创建一个HSSFWorkbook，对应一个Excel文件
+        if(wb == null){
+            wb = new XSSFWorkbook();
+        }
+        // 第二步，在workbook中添加一个sheet,对应Excel文件中的sheet
+        XSSFSheet sheet =wb.getSheetAt(0);
+        // 第三步，初始化row
+        XSSFRow row = sheet.getRow(0);
+        XSSFCellStyle cellStyle = wb.createCellStyle();
+        cellStyle.setAlignment(HorizontalAlignment.CENTER);
+        cellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
+        //创建内容
+        for(int i=0;i<values.length;i++){
+            row = sheet.createRow(i + index);
+            for(int j=0;j<values[i].length;j++){
+                //将内容按顺序赋给对应的列对象
+                XSSFCell cell = row.createCell(j);
+                cell.setCellValue(values[i][j]);
+                cell.setCellStyle(cellStyle);
+
+                if(values[i][j]==null || values[i][j].equals(null)){
+                    continue;
+                }
+                if (i<1) {
+                    continue;
+                }
+                if(values[i][j].equals(values[i-1][j])){
+                    List<CellRangeAddress> mergeRegions = sheet.getMergedRegions();
+                    boolean isMerged = false;
+                    for (int k = 0; k < mergeRegions.size(); k++) {
+                        CellRangeAddress cellRangeAddr = mergeRegions.get(k);
+                        // 若上一个单元格已经被合并，则先移出原有的合并单元，再重新添加合并单元
+                        int rowR = i+index-1;
+                        int colR = j;
+                        if (cellRangeAddr.isInRange(rowR, colR)) {
+                            sheet.removeMergedRegion(k);
+                            cellRangeAddr.setLastRow(i+index);
+                            sheet.addMergedRegion(cellRangeAddr);
+                            isMerged = true;
+                            break;
+                        }
+                    }
+
+                    if(!isMerged){
+                        CellRangeAddress region = new CellRangeAddress(i+index-1, i+index, j, j);
+
+                        sheet.addMergedRegion(region);
+                    }
+
+                }
+
+
+
+
+            }
+        }
+
         return wb;
     }
 

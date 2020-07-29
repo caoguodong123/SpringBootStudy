@@ -147,6 +147,22 @@ public class DailyTransactionDetails {
     @Excel(name="交易员",orderNum = "8")
     private String trader;
 
+    public DailyTransactionDetails() {
+    }
+
+    public DailyTransactionDetails(Double amount, Double price, String num, Date time, String contractId, String account, String longShort, String openClose, String speculationHedging1, String trader) {
+        this.amount = amount;
+        this.price = price;
+        this.num = num;
+        this.time = time;
+        this.contractId = contractId;
+        this.account = account;
+        this.longShort = longShort;
+        this.openClose = openClose;
+        this.speculationHedging1 = speculationHedging1;
+        this.trader = trader;
+    }
+
     public Integer getMatchId() {
         return matchId;
     }
